@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="blog.css" />
+    <script
+      src="https://kit.fontawesome.com/96bf2d4fc0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Blog</title>
+
+    <link rel="stylesheet" href="./blogPage.css">
+    <!-- icon link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  </head>
+  <body>
+    <!-- header -->
+    <header class="blogPage_header">
+      <!-- container -->
+      <div class="blogPage_header_container">
+
+          <!-- poster -->
+          <div class="blogPage_header__poster">
+              <!-- content -->
+              <div class="header__poster__content">
+                  <!-- icon -->
+                  <div class="header__poster__content--icon">
+                    <img src="./assets/images/iconSvg.png" alt="">
+                  </div>
+                  <!-- title -->
+                  <div class="header__poster__content--title">
+                      <h1>Start Sharing Your Knowledge</h1>
+                  </div>
+                  <!-- freePost msg-->
+                  <div class="header__poster__content--freePost">
+                      <p>Free Post</p>
+                  </div>
+          
+              </div>
+
+          </div>
+
+          <!-- create new post -->
+          <div class="blogPage_header__createPost">
+              <!-- content -->
+              <div class="header__createPost__content">
+                  <!-- icon -->
+                  <div class="header__createPost__content--icon">
+                      <i class='bx bx-plus-circle'></i>
+                  </div>
+                  <!-- title -->
+                  <div class="header__createPost__content--title">
+                      <h3> Create Post</h3>
+                  </div>
+              </div>
+          </div>
+
+          <!-- block post -->
+          <div class="blogPage_header__blockPost">
+              <!-- content -->
+              <div class="header__blockPost__content">
+                  <!-- block 1 -->
+                  <div class="header__blockPost__content__topLeft  blockPost__style">
+                      <!-- image -->
+                      <div class="blockPost__content--image">
+                          <img src="https://th.bing.com/th/id/OIP.81dsIqe2xwUdYljRDtw5ugHaHk?pid=ImgDet&rs=1" alt="">
+                      </div>
+                      <!-- title -->
+                      <div class="blockPost__content--title">
+                          <h3>Knowledge</h3>
+                      </div>
+                      <!-- overlay -->
+                      <div class="blockPost__content--overlay"></div>
+                  </div>
+                  <!-- block 2 -->
+                  <div class="header__blockPost__content__topRight blockPost__style">
+                      <!-- image -->
+                      <div class="blockPost__content--image">
+                          <img src="https://th.bing.com/th/id/R.f971711bf4af945b5a1b7587e301cbdb?rik=KzzeN6svTz18gw&riu=http%3a%2f%2f3.bp.blogspot.com%2f-rF-ljIgE0hY%2fUVds4TZWSRI%2fAAAAAAAALGU%2fuC-kYHZqdUQ%2fs640%2fAndre%2bMartins%2bde%2bBarros%2bbooks.jpg&ehk=fSZe6vhfiDKKjV4FJD7US%2bngqDkENOmxRuHb6%2fJvTdM%3d&risl=&pid=ImgRaw&r=0" alt="">
+                      </div>
+                      <div class="blockPost__content--overlay"></div>
+                      <!-- title -->
+                      <div class="blockPost__content--title">
+                          <h3>Knowledge</h3>
+                      </div>
+                      <!-- overlay -->
+                      <div class="blockPost__content--overlay"></div>
+                  </div>
+                  <!-- block 3 -->
+                  <div class="header__blockPost__content__bottomLeft blockPost__style">
+                      <!-- image -->
+                      <div class="blockPost__content--image">
+                          <img src="https://img00.deviantart.net/bbed/i/2011/058/7/5/johannes_strate_100x100_icons_by_luligoesherway-d3akhp8.jpg" alt="">
+                      </div>
+                      <!-- overlay -->
+                      <div class="blockPost__content--overlay"></div>
+                      <!-- title -->
+                      <div class="blockPost__content--title">
+                          <h3>Knowledge</h3>
+                      </div>
+                  </div>
+                  <!-- block 4 -->
+                  <div class="header__blockPost__content__bottomRight blockPost__style">
+                      <!-- image -->
+                      <div class="blockPost__content--image">
+                          <img src="https://i.pinimg.com/originals/f4/80/ea/f480ea28f81d1ab63381b16d8c980662.jpg" alt="">
+                      </div>
+                      <!-- overlay -->
+                      <div class="blockPost__content--overlay"></div>
+
+                      <!-- title -->
+                      <div class="blockPost__content--title">
+                          <h3>Knowledge</h3>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+    </header>
+
+
+    <main id="blog__wrapper">
+      <div class="blog__container">
+        <!-- filter -->
+        <div class="blog-filter-container">
+          <div class="blog-filter-top">
+            <div class="blog-filter-top-title">Filter</div>
+            <div class="blog-filter-top-cancle-button">
+              <div class="blog-filter-top-cancle-text">Cancle Filter</div>
+              <div class="blog-filter-top-cancle-icon">
+                <i class="fa-regular fa-circle-xmark"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-filter-bottom">
+            <!-- filter button -->
+            <div class="blog-filter-bottom-button-wrap">
+              <!-- arrow icon -->
+              <div
+                class="blog-filter-bottom-arrow-icon blog-filter-bottom-arrow-left-icon"
+              >
+                <i class="fa-solid fa-circle-arrow-left"></i>
+              </div>
+              <div
+                class="blog-filter-bottom-arrow-icon blog-filter-bottom-arrow-right-icon"
+              >
+                <i class="fa-solid fa-circle-arrow-right"></i>
+              </div>
+              <div class="blog-filter-bottom-filter-box">
+                <i class="fa-solid fa-folder-closed"></i>
+                <div class="blog-filter-bottom-filter-box-text">All</div>
+              </div>
+              <div class="blog-filter-bottom-filter-box">
+                <i class="fa-solid fa-folder-closed"></i>
+                <div class="blog-filter-bottom-filter-box-text">
+                  Our Activity
+                </div>
+              </div>
+              <div class="blog-filter-bottom-filter-box">
+                <i class="fa-solid fa-folder-closed"></i>
+                <div class="blog-filter-bottom-filter-box-text">
+                  Our Achievement
+                </div>
+              </div>
+              <div class="blog-filter-bottom-filter-box">
+                <i class="fa-solid fa-folder-closed"></i>
+                <div class="blog-filter-bottom-filter-box-text">
+                  Our Innovations
+                </div>
+              </div>
+              <div class="blog-filter-bottom-filter-box">
+                <i class="fa-solid fa-folder-closed"></i>
+                <div class="blog-filter-bottom-filter-box-text">Our Events</div>
+              </div>
+              <div class="blog-filter-bottom-filter-box">
+                <i class="fa-solid fa-folder-closed"></i>
+                <div class="blog-filter-bottom-filter-box-text">
+                  Our Activity
+                </div>
+              </div>
+              <div class="blog-filter-bottom-filter-box">
+                <i class="fa-solid fa-folder-closed"></i>
+                <div class="blog-filter-bottom-filter-box-text">
+                  Our Activity
+                </div>
+              </div>
+              <div class="blog-filter-bottom-filter-box">
+                <i class="fa-solid fa-folder-closed"></i>
+                <div class="blog-filter-bottom-filter-box-text">
+                  Our Activity
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- blog card -->
+        <div class="blog-card-container">
+          <!-- card -->
+          <div class="blog-card-link-wrap">
+            <a href="./BlogPage/First-part.html" class="blog-card-link">
+              <!-- top -->
+              <div class="blog-card-top">
+                <!-- image -->
+                <div class="blog-card-top-image-wrap">
+                  <img
+                    src="assets/images/blog-image.jpg"
+                    alt="blog-card-image"
+                    class="blog-card-top-image"
+                  />
+                </div>
+                <!-- blog text -->
+                <div class="blog-card-top-text">
+                  <!-- title -->
+                  <h2 class="blog-card-top-text-title">Title Go Here</h2>
+                  <!-- detail -->
+                  <p class="blog-card-top-text-detail">
+                    Amet minim mollit non deserunt ullamco est sit aliqua
+                    doloerunt ullamco est sit aliqua dolor dor doerunt ullamco
+                    est sit aliqua dolor a doloado...
+                  </p>
+                </div>
+              </div>
+              <!-- bottom -->
+              <div class="blog-card-bottom">
+                <div class="blog-card-bottom-left">
+                  <!-- author image -->
+                  <div class="blog-card-bottom-left-author-image-wrap">
+                    <img
+                      class="blog-card-bottom-left-author-image"
+                      src="assets/images/author-image.jpg"
+                    />
+                  </div>
+                  <div class="blog-card-bottom-left-author-name">
+                    Wade Waren
+                  </div>
+                </div>
+                <div class="blog-card-bottom-right">
+                  <small class="blog-card-bottom-right-date"
+                    >18 April, 2022</small
+                  >
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- card -->
+          <div class="blog-card-link-wrap">
+            <a href="./BlogPage/First-part.html" class="blog-card-link">
+              <!-- top -->
+              <div class="blog-card-top">
+                <!-- image -->
+                <div class="blog-card-top-image-wrap">
+                  <img
+                    src="assets/images/blog-image2.jpg"
+                    alt="blog-card-image"
+                    class="blog-card-top-image"
+                  />
+                </div>
+                <!-- blog text -->
+                <div class="blog-card-top-text">
+                  <!-- title -->
+                  <h2 class="blog-card-top-text-title">Title Go Here</h2>
+                  <!-- detail -->
+                  <p class="blog-card-top-text-detail">
+                    Amet minim mollit non deserunt ullamco est sit aliqua
+                    doloerunt ullamco est sit aliqua dolor dor doerunt ullamco
+                    est sit aliqua dolor a doloado beautiful
+                  </p>
+                </div>
+              </div>
+              <!-- bottom -->
+              <div class="blog-card-bottom">
+                <div class="blog-card-bottom-left">
+                  <!-- author image -->
+                  <div class="blog-card-bottom-left-author-image-wrap">
+                    <img
+                      class="blog-card-bottom-left-author-image"
+                      src="assets/images/author-image.jpg"
+                    />
+                  </div>
+                  <div class="blog-card-bottom-left-author-name">
+                    Wade Waren
+                  </div>
+                </div>
+                <div class="blog-card-bottom-right">
+                  <small class="blog-card-bottom-right-date"
+                    >18 April, 2022</small
+                  >
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- card -->
+          <div class="blog-card-link-wrap">
+            <a href="./BlogPage/First-part.html" class="blog-card-link">
+              <!-- top -->
+              <div class="blog-card-top">
+                <!-- image -->
+                <div class="blog-card-top-image-wrap">
+                  <img
+                    src="assets/images/blog-image3.jpg"
+                    alt="blog-card-image"
+                    class="blog-card-top-image"
+                  />
+                </div>
+                <!-- blog text -->
+                <div class="blog-card-top-text">
+                  <!-- title -->
+                  <h2 class="blog-card-top-text-title">Title Go Here</h2>
+                  <!-- detail -->
+                  <p class="blog-card-top-text-detail">
+                    Amet minim mollit non deserunt ullamco est sit aliqua
+                    doloerunt ullamco est sit aliqua dolor dor doerunt ullamco
+                    est sit aliqua dolor a doloado beautiful
+                  </p>
+                </div>
+              </div>
+              <!-- bottom -->
+              <div class="blog-card-bottom">
+                <div class="blog-card-bottom-left">
+                  <!-- author image -->
+                  <div class="blog-card-bottom-left-author-image-wrap">
+                    <img
+                      class="blog-card-bottom-left-author-image"
+                      src="assets/images/author-image.jpg"
+                    />
+                  </div>
+                  <div class="blog-card-bottom-left-author-name">
+                    Wade Waren
+                  </div>
+                </div>
+                <div class="blog-card-bottom-right">
+                  <small class="blog-card-bottom-right-date"
+                    >18 April, 2022</small
+                  >
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- card -->
+          <div class="blog-card-link-wrap">
+            <a href="./BlogPage/First-part.html" class="blog-card-link">
+              <!-- top -->
+              <div class="blog-card-top">
+                <!-- image -->
+                <div class="blog-card-top-image-wrap">
+                  <img
+                    src="assets/images/blog-image4.jpg"
+                    alt="blog-card-image"
+                    class="blog-card-top-image"
+                  />
+                </div>
+                <!-- blog text -->
+                <div class="blog-card-top-text">
+                  <!-- title -->
+                  <h2 class="blog-card-top-text-title">Title Go Here</h2>
+                  <!-- detail -->
+                  <p class="blog-card-top-text-detail">
+                    Amet minim mollit non deserunt ullamco est sit aliqua
+                    doloerunt ullamco est sit aliqua dolor dor doerunt ullamco
+                    est sit aliqua dolor a doloado beautiful
+                  </p>
+                </div>
+              </div>
+              <!-- bottom -->
+              <div class="blog-card-bottom">
+                <div class="blog-card-bottom-left">
+                  <!-- author image -->
+                  <div class="blog-card-bottom-left-author-image-wrap">
+                    <img
+                      class="blog-card-bottom-left-author-image"
+                      src="assets/images/author-image.jpg"
+                    />
+                  </div>
+                  <div class="blog-card-bottom-left-author-name">
+                    Wade Waren
+                  </div>
+                </div>
+                <div class="blog-card-bottom-right">
+                  <small class="blog-card-bottom-right-date"
+                    >18 April, 2022</small
+                  >
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- card -->
+          <div class="blog-card-link-wrap">
+            <a href="./BlogPage/First-part.html" class="blog-card-link">
+              <!-- top -->
+              <div class="blog-card-top">
+                <!-- image -->
+                <div class="blog-card-top-image-wrap">
+                  <img
+                    src="assets/images/blog-image5.jpg"
+                    alt="blog-card-image"
+                    class="blog-card-top-image"
+                  />
+                </div>
+                <!-- blog text -->
+                <div class="blog-card-top-text">
+                  <!-- title -->
+                  <h2 class="blog-card-top-text-title">Title Go Here</h2>
+                  <!-- detail -->
+                  <p class="blog-card-top-text-detail">
+                    Amet minim mollit non deserunt ullamco est sit aliqua
+                    doloerunt ullamco est sit aliqua dolor dor doerunt ullamco
+                    est sit aliqua dolor a doloado beautiful
+                  </p>
+                </div>
+              </div>
+              <!-- bottom -->
+              <div class="blog-card-bottom">
+                <div class="blog-card-bottom-left">
+                  <!-- author image -->
+                  <div class="blog-card-bottom-left-author-image-wrap">
+                    <img
+                      class="blog-card-bottom-left-author-image"
+                      src="assets/images/author-image.jpg"
+                    />
+                  </div>
+                  <div class="blog-card-bottom-left-author-name">
+                    Wade Waren
+                  </div>
+                </div>
+                <div class="blog-card-bottom-right">
+                  <small class="blog-card-bottom-right-date"
+                    >18 April, 2022</small
+                  >
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- card -->
+          <div class="blog-card-link-wrap">
+            <a href="./BlogPage/First-part.html" class="blog-card-link">
+              <!-- top -->
+              <div class="blog-card-top">
+                <!-- image -->
+                <div class="blog-card-top-image-wrap">
+                  <img
+                    src="assets/images/blog-image6.jpg"
+                    alt="blog-card-image"
+                    class="blog-card-top-image"
+                  />
+                </div>
+                <!-- blog text -->
+                <div class="blog-card-top-text">
+                  <!-- title -->
+                  <h2 class="blog-card-top-text-title">Title Go Here</h2>
+                  <!-- detail -->
+                  <p class="blog-card-top-text-detail">
+                    Amet minim mollit non deserunt ullamco est sit aliqua
+                    doloerunt ullamco est sit aliqua dolor dor doerunt ullamco
+                    est sit aliqua dolor a doloado beautiful
+                  </p>
+                </div>
+              </div>
+              <!-- bottom -->
+              <div class="blog-card-bottom">
+                <div class="blog-card-bottom-left">
+                  <!-- author image -->
+                  <div class="blog-card-bottom-left-author-image-wrap">
+                    <img
+                      class="blog-card-bottom-left-author-image"
+                      src="assets/images/author-image.jpg"
+                    />
+                  </div>
+                  <div class="blog-card-bottom-left-author-name">
+                    Wade Waren
+                  </div>
+                </div>
+                <div class="blog-card-bottom-right">
+                  <small class="blog-card-bottom-right-date"
+                    >18 April, 2022</small
+                  >
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- card -->
+          <div class="blog-card-link-wrap">
+            <a href="./BlogPage/First-part.html" class="blog-card-link">
+              <!-- top -->
+              <div class="blog-card-top">
+                <!-- image -->
+                <div class="blog-card-top-image-wrap">
+                  <img
+                    src="assets/images/blog-image7.jpg"
+                    alt="blog-card-image"
+                    class="blog-card-top-image"
+                  />
+                </div>
+                <!-- blog text -->
+                <div class="blog-card-top-text">
+                  <!-- title -->
+                  <h2 class="blog-card-top-text-title">Title Go Here</h2>
+                  <!-- detail -->
+                  <p class="blog-card-top-text-detail">
+                    Amet minim mollit non deserunt ullamco est sit aliqua
+                    doloerunt ullamco est sit aliqua dolor dor doerunt ullamco
+                    est sit aliqua dolor a doloado beautiful
+                  </p>
+                </div>
+              </div>
+              <!-- bottom -->
+              <div class="blog-card-bottom">
+                <div class="blog-card-bottom-left">
+                  <!-- author image -->
+                  <div class="blog-card-bottom-left-author-image-wrap">
+                    <img
+                      class="blog-card-bottom-left-author-image"
+                      src="assets/images/author-image.jpg"
+                    />
+                  </div>
+                  <div class="blog-card-bottom-left-author-name">
+                    Wade Waren
+                  </div>
+                </div>
+                <div class="blog-card-bottom-right">
+                  <small class="blog-card-bottom-right-date"
+                    >18 April, 2022</small
+                  >
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- card -->
+          <div class="blog-card-link-wrap">
+            <a href="./BlogPage/First-part.html" class="blog-card-link">
+              <!-- top -->
+              <div class="blog-card-top">
+                <!-- image -->
+                <div class="blog-card-top-image-wrap">
+                  <img
+                    src="assets/images/blog-image8.jpg"
+                    alt="blog-card-image"
+                    class="blog-card-top-image"
+                  />
+                </div>
+                <!-- blog text -->
+                <div class="blog-card-top-text">
+                  <!-- title -->
+                  <h2 class="blog-card-top-text-title">Title Go Here</h2>
+                  <!-- detail -->
+                  <p class="blog-card-top-text-detail">
+                    Amet minim mollit non deserunt ullamco est sit aliqua
+                    doloerunt ullamco est sit aliqua dolor dor doerunt ullamco
+                    est sit aliqua dolor a doloado beautiful
+                  </p>
+                </div>
+              </div>
+              <!-- bottom -->
+              <div class="blog-card-bottom">
+                <div class="blog-card-bottom-left">
+                  <!-- author image -->
+                  <div class="blog-card-bottom-left-author-image-wrap">
+                    <img
+                      class="blog-card-bottom-left-author-image"
+                      src="assets/images/author-image.jpg"
+                    />
+                  </div>
+                  <div class="blog-card-bottom-left-author-name">
+                    Wade Waren
+                  </div>
+                </div>
+                <div class="blog-card-bottom-right">
+                  <small class="blog-card-bottom-right-date"
+                    >18 April, 2022</small
+                  >
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- card -->
+          <div class="blog-card-link-wrap">
+            <a href="./BlogPage/First-part.html" class="blog-card-link">
+              <!-- top -->
+              <div class="blog-card-top">
+                <!-- image -->
+                <div class="blog-card-top-image-wrap">
+                  <img
+                    src="assets/images/blog-image9.jpg"
+                    alt="blog-card-image"
+                    class="blog-card-top-image"
+                  />
+                </div>
+                <!-- blog text -->
+                <div class="blog-card-top-text">
+                  <!-- title -->
+                  <h2 class="blog-card-top-text-title">Title Go Here</h2>
+                  <!-- detail -->
+                  <p class="blog-card-top-text-detail">
+                    Amet minim mollit non deserunt ullamco est sit aliqua
+                    doloerunt ullamco est sit aliqua dolor dor doerunt ullamco
+                    est sit aliqua dolor a doloado beautiful
+                  </p>
+                </div>
+              </div>
+              <!-- bottom -->
+              <div class="blog-card-bottom">
+                <div class="blog-card-bottom-left">
+                  <!-- author image -->
+                  <div class="blog-card-bottom-left-author-image-wrap">
+                    <img
+                      class="blog-card-bottom-left-author-image"
+                      src="assets/images/author-image.jpg"
+                    />
+                  </div>
+                  <div class="blog-card-bottom-left-author-name">
+                    Wade Waren
+                  </div>
+                </div>
+                <div class="blog-card-bottom-right">
+                  <small class="blog-card-bottom-right-date"
+                    >18 April, 2022</small
+                  >
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- javascript code -->
+    <script src="blog.js"></script>
+  </body>
+</html>
